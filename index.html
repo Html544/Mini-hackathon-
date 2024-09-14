@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Success</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">The Crew</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Navigating the Digital Landscape for Success</h1>
+            <p>Your success in the digital world requires navigating key strategies like SEO, PPC, and more.</p>
+            <button>Book a Consultation</button>
+        </div>
+        <div class="trusted-by">
+            <p>Trusted by:</p>
+            <img src="amazon-logo.png" alt="Amazon">
+            <img src="dribbble-logo.png" alt="Dribbble">
+            <img src="hubspot-logo.png" alt="HubSpot">
+            <img src="notion-logo.png" alt="Notion">
+            <img src="netflix-logo.png" alt="Netflix">
+            <img src="zoom-logo.png" alt="Zoom">
+        </div>
+    </header>
+
+    <main>
+        <section class="services">
+            <h2>Services</h2>
+            <div class="service-box">
+                <h3>Search Engine Optimization</h3>
+            </div>
+            <div class="service-box">
+                <h3>Pay-per-click Advertising</h3>
+            </div>
+        </section>
+
+        <section class="working-process">
+            <h2>Our Working Process</h2>
+            <div class="process-step" onclick="toggleStep(this)">
+                01 Consultation
+                <div class="process-details">
+                    <p>We discuss your business needs, goals, and target audience to identify the best strategies for success.</p>
+                </div>
+            </div>
+            <div class="process-step" onclick="toggleStep(this)">
+                02 Research and Strategy Development
+                <div class="process-details">
+                    <p>We conduct in-depth research into your industry and competition, developing a tailored strategy.</p>
+                </div>
+            </div>
+            <div class="process-step" onclick="toggleStep(this)">
+                03 Implementation
+                <div class="process-details">
+                    <p>Our team begins executing the strategies, optimizing your digital presence across multiple channels.</p>
+                </div>
+            </div>
+            <div class="process-step" onclick="toggleStep(this)">
+                04 Monitoring and Optimization
+                <div class="process-details">
+                    <p>We continuously track the performance of campaigns and make necessary adjustments for improvements.</p>
+                </div>
+            </div>
+            <div class="process-step" onclick="toggleStep(this)">
+                05 Reporting and Communication
+                <div class="process-details">
+                    <p>Regular reporting on key metrics, including detailed insights into the progress of your campaigns.</p>
+                </div>
+            </div>
+            <div class="process-step" onclick="toggleStep(this)">
+                06 Continual Improvement
+                <div class="process-details">
+                    <p>We never stop improving and refining the strategy to ensure long-term success and growth.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-us">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li>Contact Us</li>
+            <li>Subscribe to News</li>
+        </ul>
+    </footer>
+
+    <script>
+        function toggleStep(element) {
+            // Toggle active class to change color and expand details
+            element.classList.toggle('active-step');
+            const details = element.querySelector('.process-details');
+            details.classList.toggle('show-details');
+        }
+    </script>
+</body>
+</html>
